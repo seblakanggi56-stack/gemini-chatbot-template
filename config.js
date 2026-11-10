@@ -8,37 +8,38 @@ const BOT_CONFIG = {
     // ------------------------------------------------------------------------
     // 1. BRANDING & UI SETTINGS
     // ------------------------------------------------------------------------
-    botName: "Casper Bot",
-    botSubtitle: "Powered by Google Gemini • Custom Knowledge Base",
+    botName: "CasperBot",
+    botSubtitle: "ChatBot Tentang Informasi Sekolah",
     botAvatar: "🤖",
     userAvatar: "🧑‍💻",
-    welcomeHeading: "Hello! How can I help you today?",
-    welcomeSubtext: "Select a starter prompt below or type your own question to begin.",
+    welcomeHeading: "Hai Apakah Ada Yang Bisa Saya Bantu?",
+    welcomeSubtext: "Silahkan Pilih Topik Pertanyaan Di Bawah Ini Atau Ketik Pesan Anda Untuk Mulai Berkonsultasi.",
 
     introCards: [
         {
-            icon: "📚",
-            title: "Explain a Concept",
-            description: "Break down complex topics into simple, everyday terms.",
-            prompt: "Can you explain how artificial intelligence works in simple terms?"
+        
+            icon: "🏫",
+            title: "Daftar Jurusan Sekolah",
+            description: "Informasi lengkap mengenai jurusan RPL, TKJ, TSM, TKR, BDP, TO, dan LP.",
+            prompt: "Apa saja profil, keunggulan, dan prospek kerja untuk jurusan RPL, TKJ, TSM, TKR, BDP, TO, dan LP di sekolah ini?"
         },
         {
-            icon: "⚡",
-            title: "Check Knowledge Base",
-            description: "Ask questions about our custom internal documents.",
-            prompt: "What information do you have in your official knowledge base?"
+            icon: "🏆",
+            title: "Kegiatan Ekstrakurikuler",
+            description: "Pramuka, Band, Basket, Futsal, Karawitan, Paskibra, Renang, Silat, PMR, dan Balap Motor.",
+            prompt: "Apa saja jadwal dan kegiatan untuk ekstrakurikuler Pramuka, Band, Basket, Futsal, Karawitan, Paskibra, Renang, Silat, PMR, dan Balap Motor?"
         },
         {
-            icon: "💡",
-            title: "Brainstorm Ideas",
-            description: "Generate creative project ideas and structured outlines.",
-            prompt: "Give me 3 creative science fair project ideas involving robotics."
+            icon: "🏢",
+            title: "Fasilitas & Sarana Sekolah",
+            description: "Gedung Kembar RPL-TKJ, Taman RPL, Kantin SPW, GOR, Kolam Renang, Taman LP, Masjid, TU, Ruang Guru, Parkiran, Perpustakaan, Ruang Kelas, Lab Komputer, Lab VR, Studio Musik, UKS, Kantin, Toilet, dan Ruang BK.",
+            prompt: "Tolong jelaskan secara lengkap fungsi dan lokasi dari fasilitas Gedung Kembar RPL-TKJ, Taman RPL, Kantin SPW, GOR, Kolam Renang, Taman LP, Masjid, TU, Ruang Guru, Parkiran, Perpustakaan, Ruang Kelas, Lab Komputer, Lab VR, Studio Musik, UKS, Kantin, Toilet, dan Ruang BK di sekolah ini."
         },
         {
-            icon: "🛠️",
-            title: "Debug & Troubleshoot",
-            description: "Step-by-step assistance for solving technical problems.",
-            prompt: "How should I approach debugging a program that isn't working as expected?"
+            icon: "🎓",
+            title: "Program Kursus & Keterampilan",
+            description: "Kursus Mengemudi, Servis Motor, Bahasa Jepang, Las, Balap Motor, Desain Grafis, Robotika, dan Investasi.",
+            prompt: "Apa saja informasi dan materi yang tersedia untuk program kursus Mengemudi, Servis Motor, Bahasa Jepang, Las, Balap Motor, Desain Grafis, Robotika, dan Investasi?"
         }
     ],
 
