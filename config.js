@@ -8,11 +8,11 @@ const BOT_CONFIG = {
     // ------------------------------------------------------------------------
     // 1. BRANDING & UI SETTINGS
     // ------------------------------------------------------------------------
-    botName: "Nexus AI Assistant",
-    botSubtitle: "Powered by Google Gemini • Custom Knowledge Base",
+    botName: "CasperBot",
+    botSubtitle: "Chatbo Untuk Memberi Informasi Sekolah",
     botAvatar: "🤖",
     userAvatar: "🧑‍💻",
-    welcomeHeading: "Hello! How can I help you today?",
+    welcomeHeading: "Hai Apa Yang Bisa Saya Bantu?",
     welcomeSubtext: "Select a starter prompt below or type your own question to begin.",
 
     introCards: [
