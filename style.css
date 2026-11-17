@@ -173,10 +173,19 @@ body {
 
 .input-wrapper:focus-within { border-color: var(--accent-primary); box-shadow: 0 0 0 3px var(--accent-glow); }
 
+/* Memastikan teks ketikan & placeholder di kolom pertanyaan berwarna putih */
 #user-input {
-    flex: 1; background: transparent; border: none; color: var(--text-primary);
-    font-family: inherit; font-size: 0.95rem; line-height: 1.5; max-height: 140px;
-    resize: none; outline: none; padding: 0.25rem 0;
+    color: #ffffff !important;
+}
+
+#user-input::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Memastikan judul & deskripsi pada kartu pertanyaan awal berwarna putih */
+.intro-card-header,
+.intro-card-desc {
+    color: #ffffff !important;
 }
 
 .send-btn {
