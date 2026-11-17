@@ -1,18 +1,19 @@
 :root[data-theme="dark"] {
-    --bg-primary: #06142e;           /* Biru tua gelap (latar luar) */
-    --bg-secondary: #0a1f44;         /* Biru tua (wadah chat) */
-    --bg-surface: #112d5e;           /* Biru sedang (kartu/input) */
-    --bg-surface-hover: #1a3f80;
-    --text-primary: #ffffff;         /* Putih bersih */
-    --text-secondary: #cbd5e1;       /* Putih keabuan */
-    --accent-primary: #2563eb;       /* Biru cerah utama */
-    --accent-hover: #1d4ed8;
-    --accent-glow: rgba(37, 99, 235, 0.35);
-    --user-bubble: #1d4ed8;          /* Bubble chat pengguna (Biru) */
+    --bg-primary: #07090e;           /* Hitam pekat kebiruan (latar luar) */
+    --bg-secondary: #0d111a;         /* Gelap elegan (wadah utama chat) */
+    --bg-surface: #161d2c;           /* Abu-abu gelap kebiruan (kartu/kolom ketik) */
+    --bg-surface-hover: #1f293d;     /* Efek saat disentuh kursor */
+    --text-primary: #f1f5f9;         /* Putih lembut agar tidak silau */
+    --text-secondary: #94a3b8;       /* Abu-abu terang untuk sub-teks */
+    --accent-primary: #3b82f6;       /* Biru elektrik utama */
+    --accent-hover: #2563eb;
+    --accent-glow: rgba(59, 130, 246, 0.35);
+    --user-bubble: #2563eb;          /* Bubble chat pengguna (Biru terang) */
     --user-text: #ffffff;            /* Teks pengguna (Putih) */
-    --bot-bubble: #0f2954;           /* Bubble chat bot (Biru tua) */
-    --border-color: rgba(255, 255, 255, 0.15);
-    --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.5);
+    --bot-bubble: #131926;           /* Bubble chat bot (Gelap kontras) */
+    --border-color: rgba(148, 163, 184, 0.12);
+    --shadow-md: 0 10px 35px rgba(0, 0, 0, 0.7);
+}
     
     /* Aksen tambahan: Kuning, Merah, Hijau, Hitam */
     --accent-yellow: #facc15;
