@@ -8,7 +8,7 @@ const BOT_CONFIG = {
     // ------------------------------------------------------------------------
     // 1. BRANDING & UI SETTINGS
     // ------------------------------------------------------------------------
-    botName: "CasperBot",
+    botName: "CasperInfromation",
     botSubtitle: "ChatBot Tentang Informasi Sekolah",
     botAvatar: "🤖",
     userAvatar: "🧑‍💻",
