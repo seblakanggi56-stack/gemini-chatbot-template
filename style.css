@@ -111,11 +111,10 @@ body {
 }
 
 .welcome-hero h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; }
-.welcome-hero p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 2rem; }
-
-.intro-cards-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 0.9rem; text-align: left;
+.welcome-hero p { 
+    color: #ffffff; 
+    font-size: 0.95rem; 
+    margin-bottom: 2rem; 
 }
 
 .intro-card {
