@@ -1,35 +1,47 @@
 :root[data-theme="dark"] {
-    --bg-primary: #0b0f19;
-    --bg-secondary: #111827;
-    --bg-surface: #1e293b;
-    --bg-surface-hover: #334155;
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --accent-primary: #6366f1;
-    --accent-hover: #4f46e5;
-    --accent-glow: rgba(99, 102, 241, 0.25);
-    --user-bubble: #4f46e5;
-    --user-text: #ffffff;
-    --bot-bubble: #1e293b;
-    --border-color: rgba(255, 255, 255, 0.08);
-    --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.35);
+    --bg-primary: #06142e;           /* Biru tua gelap (latar luar) */
+    --bg-secondary: #0a1f44;         /* Biru tua (wadah chat) */
+    --bg-surface: #112d5e;           /* Biru sedang (kartu/input) */
+    --bg-surface-hover: #1a3f80;
+    --text-primary: #ffffff;         /* Putih bersih */
+    --text-secondary: #cbd5e1;       /* Putih keabuan */
+    --accent-primary: #2563eb;       /* Biru cerah utama */
+    --accent-hover: #1d4ed8;
+    --accent-glow: rgba(37, 99, 235, 0.35);
+    --user-bubble: #1d4ed8;          /* Bubble chat pengguna (Biru) */
+    --user-text: #ffffff;            /* Teks pengguna (Putih) */
+    --bot-bubble: #0f2954;           /* Bubble chat bot (Biru tua) */
+    --border-color: rgba(255, 255, 255, 0.15);
+    --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.5);
+    
+    /* Aksen tambahan: Kuning, Merah, Hijau, Hitam */
+    --accent-yellow: #facc15;
+    --accent-red: #ef4444;
+    --accent-green: #22c55e;
+    --accent-black: #020617;
 }
 
 :root[data-theme="light"] {
-    --bg-primary: #f8fafc;
-    --bg-secondary: #ffffff;
-    --bg-surface: #f1f5f9;
-    --bg-surface-hover: #e2e8f0;
-    --text-primary: #0f172a;
-    --text-secondary: #64748b;
-    --accent-primary: #4f46e5;
-    --accent-hover: #4338ca;
-    --accent-glow: rgba(79, 70, 229, 0.15);
-    --user-bubble: #4f46e5;
-    --user-text: #ffffff;
-    --bot-bubble: #ffffff;
-    --border-color: rgba(15, 23, 42, 0.1);
-    --shadow-md: 0 8px 25px rgba(15, 23, 42, 0.06);
+    --bg-primary: #eff6ff;           /* Putih kebiruan lembut (latar luar) */
+    --bg-secondary: #ffffff;         /* Putih dominan (wadah chat) */
+    --bg-surface: #dbeafe;           /* Biru muda lembut (kartu/input) */
+    --bg-surface-hover: #bfdbfe;
+    --text-primary: #0a192f;         /* Biru tua pekat / hampir hitam */
+    --text-secondary: #1e3a8a;       /* Biru tua untuk sub-teks */
+    --accent-primary: #2563eb;       /* Biru cerah utama */
+    --accent-hover: #1e40af;         /* Biru tua saat disentuh */
+    --accent-glow: rgba(37, 99, 235, 0.2);
+    --user-bubble: #2563eb;          /* Bubble pengguna (Biru) */
+    --user-text: #ffffff;            /* Teks pengguna (Putih) */
+    --bot-bubble: #f8fafc;           /* Bubble bot (Putih) */
+    --border-color: rgba(30, 58, 138, 0.15);
+    --shadow-md: 0 8px 25px rgba(10, 25, 47, 0.08);
+
+    /* Aksen tambahan: Kuning, Merah, Hijau, Hitam */
+    --accent-yellow: #eab308;
+    --accent-red: #dc2626;
+    --accent-green: #16a34a;
+    --accent-black: #090d16;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
