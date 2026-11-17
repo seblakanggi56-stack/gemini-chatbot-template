@@ -49,7 +49,7 @@ const BOT_CONFIG = {
     // PROXY_URL forces the app to route requests through your Netlify backend
     authMode: "PROXY_URL", 
     // Replace this with your actual Netlify function URL once deployed
-    proxyEndpoint: "https://your-site.netlify.app/.netlify/functions/gemini-proxy", 
+    proxyEndpoint: "https://casperbott.netlify.app/.netlify/functions/gemini-proxy", 
     modelName: "gemini-3.5-flash-lite",
 
     // ------------------------------------------------------------------------
@@ -76,13 +76,22 @@ const BOT_CONFIG = {
     // ------------------------------------------------------------------------
     // 5. SYSTEM PROMPT & GUARDRAILS
     // ------------------------------------------------------------------------
-    systemPrompt: `You are Nexus, a helpful, accurate, and friendly AI assistant created for a school project.
-Follow these core rules at all times:
-1. Tone & Style: Be clear, encouraging, concise, and structured. Use bullet points or bold text for readability.
-2. Grounded Answers: When "[REFERENCE DOCUMENTS]" are provided with the user's message, prioritize those facts above all else.
-3. Honesty: If you do not know the answer, state clearly what you know and do not fabricate facts.
-4. Safety: Refuse to generate harmful, inappropriate, or academic-dishonesty content.`,
+    systemPrompt: `Kamu adalah CasperBot, asisten AI sekolah yang ramah dan informatif. Jawab pertanyaan pengguna berdasarkan data sekolah berikut:
 
+1. JURUSAN SEKOLAH:
+- RPL (Rekayasa Perangkat Lunak): [Isi profil, keunggulan, prospek kerja]
+- TKJ (Teknik Komputer dan Jaringan): [Isi profil, keunggulan, prospek kerja]
+- TSM, TKR, BDP, TO, LP: [Isi masing-masing penjelasannya]
+
+2. EKSTRAKURIKULER:
+- Pramuka, Band, Basket, Futsal, Karawitan, Paskibra, Renang, Silat, PMR, Balap Motor: [Isi jadwal dan kegiatannya]
+
+3. FASILITAS & KURSUS:
+- [Isi daftar fasilitas dan program kursus beserta keterangannya]
+
+Aturan:
+- Gunakan poin-poin atau teks tebal agar mudah dibaca.
+- Jika pengguna menanyakan hal di luar data di atas, jawab dengan jujur bahwa informasi tersebut belum tersedia.`,
     ragInjectionTemplate: `Use the following [REFERENCE DOCUMENTS] to answer the user's question accurately. If the documents are not relevant to the question, rely on your general knowledge without mentioning the documents explicitly.`
 };
 
