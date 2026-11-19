@@ -168,19 +168,26 @@ body {
     background: var(--bg-surface); border: 1px solid var(--border-color);
     border-radius: 16px; padding: 0.55rem 0.65rem 0.55rem 1rem;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.input-wrapper:focus-within { border-color: var(--accent-primary); box-shadow: 0 0 0 3px var(--accent-glow); }
-
-/* Memastikan teks ketikan & placeholder di kolom pertanyaan berwarna putih */
+}/* Memastikan ukuran & warna ketikan serta placeholder terlihat jelas */
 #user-input {
-    color: var(--text-primary) !important; 
+    flex: 1;
+    width: 100%;
+    min-height: 24px;
+    max-height: 150px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-primary) !important;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
 }
 
 #user-input::placeholder {
-    color: var(--text-secondary) !important
+    font-size: 0.95rem;
+    color: var(--text-secondary) !important;
 }
-
 /* Memastikan judul & deskripsi pada kartu pertanyaan awal berwarna putih */
 .intro-card-header { 
     color: var(--text-primary) !important;
