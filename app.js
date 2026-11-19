@@ -163,20 +163,41 @@ async function callProxyAPI(contents) {
     return candidateText;
 }
 
-function appendMessageUI(sender, text) {
-    const row = document.createElement("div");
-    row.className = `message-row ${sender}`;
-    const avatar = sender === "user" ? BOT_CONFIG.userAvatar : BOT_CONFIG.botAvatar;
-    const formattedContent = sender === "user" ? escapeHTML(text).replace(/\n/g, "<br>") : renderMarkdown(text);
+function appendMessageUI(sender, text, animate = true) {
+  const row = document.createElement("div");
+  row.className = `message-row ${sender}`;
 
-    row.innerHTML = `
-        <div class="msg-avatar">${escapeHTML(avatar)}</div>
-        <div class="msg-bubble">${formattedContent}</div>
-    `;
-    dom.messagesContainer.appendChild(row);
+  const avatar = sender === "user" ? BOT_CONFIG.userAvatar : BOT_CONFIG.botAvatar;
+  const bubble = document.createElement("div");
+  bubble.className = "msg-bubble";
+
+  row.innerHTML = `<div class="msg-avatar">${escapeHTML(avatar)}</div>`;
+  row.appendChild(bubble);
+  dom.messagesContainer.appendChild(row);
+
+  if (sender === "user" || !animate) {
+    bubble.innerHTML = sender === "user"
+      ? escapeHTML(text).replace(/\n/g, "<br>")
+      : renderMarkdown(text);
     scrollToBottom();
-}
+    return;
+  }
 
+  // Animasi teks mengalir bertahap dari atas ke bawah
+  let index = 0;
+  const step = 3; // Jumlah karakter per langkah (perbesar jika ingin lebih cepat)
+  const interval = setInterval(() => {
+    index += step;
+    bubble.innerHTML = renderMarkdown(text.slice(0, index));
+    scrollToBottom();
+
+    if (index >= text.length) {
+      clearInterval(interval);
+      bubble.innerHTML = renderMarkdown(text);
+      scrollToBottom();
+    }
+  }, 15);
+}
 function appendTypingIndicator() {
     const row = document.createElement("div");
     row.className = "message-row bot";
