@@ -192,7 +192,6 @@ function appendMessageUI(sender, text, animate = true) {
     return;
   }
 
-  // Animasi teks mengalir bertahap dari atas ke bawah hanya untuk balasan baru
   let index = 0;
   const step = 3;
   const interval = setInterval(() => {
