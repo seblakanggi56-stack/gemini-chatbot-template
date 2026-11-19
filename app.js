@@ -147,7 +147,22 @@ async function callProxyAPI(contents) {
     };
 
     const endpoint = BOT_CONFIG.proxyEndpoint;
-
+function loadHistoryFromLocal() {
+  const saved = localStorage.getItem(STORAGE_KEY_HISTORY);
+  if (saved) {
+    try {
+      conversationHistory = JSON.parse(saved);
+      if (conversationHistory.length > 0) {
+        dom.welcomeScreen.classList.add("hidden");
+        conversationHistory.forEach(msg => {
+          appendMessageUI(msg.role === "user" ? "user" : "bot", msg.parts[0].text);
+        });
+      }
+    } catch (e) {
+      console.error("Failed to parse local history.", e);
+    }
+  }
+}
     const response = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
