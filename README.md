@@ -1,11 +1,11 @@
 
 <div align="center">
 
-# 🚀 Gemini AI Chatbot Starter
+# 🚀 Chabot Informasi Sekolah
 
-### Serverless Proxy · Custom RAG · GitHub Pages
+### SMK Pertiwi Kuningan
 
-**A modular, customizable, and secure AI chatbot starter template powered by Google Gemini.**
+*by seblakanggii.**
 
 [🇬🇧 English](#-english) · [🇮🇩 Bahasa Indonesia](#-bahasa-indonesia)
 
